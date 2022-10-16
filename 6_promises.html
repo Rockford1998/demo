@@ -1,0 +1,20 @@
+<script>
+    // promise is a class in js 
+// it has always three state rolved,rejected and completed
+    var record=new Promise((res,rej)=>{
+        console.log(typeof res);
+        console.log(typeof rej);
+        // one state at a time 
+    // res("this is completed");
+         rej("this is incompleted")
+    })
+    // then is a handler to capture resolved value. it only handle resolved value only
+    record.then((value)=>{
+        console.log(value);
+    }).catch((error)=>{
+        // catch is a handler to capture rejected value. it only handle rejected value only
+        console.log(error);
+    }).finally(()=>{
+        console.log("proceed for next");
+    })
+</script>

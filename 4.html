@@ -1,0 +1,27 @@
+<!-- inheritance "extendsn keyword is important"-->
+
+<script>
+    class a 
+    {
+        myfunc1() {
+                console.log("class a");
+             }
+    }
+
+    class b extends a
+    {
+        myfunc2()
+         {
+            console.log("class b");
+            }
+        myfunc1()//override parent class function
+        {
+            super.myfunc1()//super keyword is used to access parent class
+            console.log("class a called");
+        }
+    }
+    var rec=new b;
+    console.log(rec);
+    rec.myfunc1();
+    rec.myfunc2();
+</script>

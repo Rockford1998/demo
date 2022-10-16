@@ -1,0 +1,23 @@
+<!-- inheritance "extendsn keyword is important"-->
+
+<script>
+    class a 
+    {
+      constructor() {
+                console.log("class a");
+             }
+    }
+
+    class b extends a
+    {
+       constructor()
+         {
+            console.log("class b");
+            super();
+            console.log(this)
+            }
+            
+    }
+    var rec=new b;
+   
+</script>
